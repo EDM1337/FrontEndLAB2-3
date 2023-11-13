@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+    <body>
+        <!-- Верхня частина сторінки -->
+        <header>
+            <div class="top-right">
+                <select>
+                    <option value="uk">Українська</option>
+                    <option value="en">English</option>
+                </select>
+                <a href="login.html">Увійти</a> / <a href="register.html">Зареєструватися</a>
+            </div>
+            
+            <nav>
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="images/logo2.png" alt="Логотип магазину">
+                    </div>
+                    <ul>
+                        <!-- Посилання меню -->
+                        <li><a href="new.html">new</a></li>
+                        <li><a href="mens.html">mens</a></li>
+                        <li><a href="womens.html">womens</a></li>
+                        <li><a href="footwear.html">footwear</a></li>
+                        <li><a href="accessories.html">accessories</a></li>
+                        <li><a href="professional.html">professional</a></li>
+                        <li><a href="patches.html">patches</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="Пошук...">
+                        <!-- Кнопка пошуку -->
+                    </div>
+                    <button onclick="location.href='cart.html'">
+                        <img src="shopping-cart.svg" alt="Кошик">
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="centered-title">CUSTOMER LOGIN</h1>
+        
+        <!-- Форма входу (Login) -->
+        <div class="customers-container">
+            <div class="registered-customers">
+                <h2>REGISTERED CUSTOMERS</h2>
+                <p>If you have an account, sign in with your email address:</p>
+                <form action="process_login.php" method="post">
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">SIGN IN</button>
+                </form>
+                <p><a href="forgot_password.html">Forgot the password?</a></p>
+            </div>
+            <div class="new-customers">
+                <h2>NEW CUSTOMER</h2>
+                <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more</p>
+                <a href="register.html">Create an account</a>
+            </div>
+        </div>
+
+        <!-- Підвал сторінки -->
+        <footer>
+            <p>© 2023 GunForce</p>
+        </footer>
+    </body>
+</html>

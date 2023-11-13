@@ -1,0 +1,98 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+.top-right {
+    text-align: right;
+    padding: 10px;
+    
+}
+
+header {
+    color: gray;
+    height: auto; 
+    overflow: visible
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E5E3;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    
+  
+}
+
+nav ul {
+    display: flex;
+    gap: 70px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.logo img {
+    
+    object-fit: contain;
+    width: 100px; 
+    height: auto;
+}
+button img {
+    width: 25px;
+    height: 25px;
+}
+
+/* правила правила для станів посилань */
+nav a:link, nav a:visited {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.centered-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.customers-container {
+    display: flex;
+}
+
+.registered-customers, .new-customers {
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.registered-customers {
+    padding-left: 250px;
+    
+}
+
+.registered-customers p, .new-customers p {
+    font-size: 1.2em;
+}

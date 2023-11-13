@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myaccount.css">
+    <title>My account</title>
+</head>
+    <body>
+        <!-- Верхня частина сторінки -->
+        <header>
+            <div class="top-right">
+                <select>
+                    <option value="uk">Українська</option>
+                    <option value="en">English</option>
+                </select>
+                <a href="login.html">Увійти</a> / <a href="register.html">Зареєструватися</a>
+            </div>
+            
+            <nav>
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="images/logo2.png" alt="Логотип магазину">
+                    </div>
+                    <ul>
+                        <!-- Посилання меню -->
+                        <li><a href="new.html">new</a></li>
+                        <li><a href="mens.html">mens</a></li>
+                        <li><a href="womens.html">womens</a></li>
+                        <li><a href="footwear.html">footwear</a></li>
+                        <li><a href="accessories.html">accessories</a></li>
+                        <li><a href="professional.html">professional</a></li>
+                        <li><a href="patches.html">patches</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="Пошук...">
+                        <!-- Кнопка пошуку -->
+                    </div>
+                    <button onclick="location.href='cart.html'">
+                        <img src="shopping-cart.svg" alt="Кошик">
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="centered-title">MY ACCOUNT</h1>
+
+        <div class="account-container">
+            <div class="account-navigation">
+                <!-- Вміст account-navigation тут -->
+                <ul>
+                    <li><a href="my_account.html">My Account</a></li>
+                    <li><a href="my_orders.html">My Orders</a></li>
+                    <li><a href="address_book.html">Address Book</a></li>
+                    <li><a href="account_info.html">Account Information</a></li>
+                    <li><a href="newsletter_subscriptions.html">Newsletter Subscriptions</a></li>
+                    <li><a href="product_reviews.html">My Product Reviews</a></li>
+                </ul>
+            </div>
+            <div class="account-details">
+                <div class="contact-info">
+                    <!-- Вміст contact-info тут -->
+                    <p><strong>Contact Information</strong></p>
+                        <p>Артур Столярчук clash4clans28@gmail.com</p>
+                        <button>EDIT</button>
+                        <button>CHANGE PASSWORD</button>
+                </div>
+                <div class="newsletters">
+                    <!-- Вміст newsletters тут -->
+                    <p><strong>NEWSLETTERS</strong></p>
+                    <p>You aren't subscribed to our newsletter</p>
+                    <button>EDIT</button>
+                </div>
+                <div class="billing-address">
+                    <!-- Вміст billing-address тут -->
+                    <p><strong>DEFAULT BILLING ADDRESS</strong></p>
+                    <p>You have not set a default billing address.</p>
+                    <button>EDIT ADDRESS</button>
+                </div>
+            </div>
+            <div class="shipping-address">
+                <!-- Вміст shipping-address тут -->
+                <p><strong>DEFAULT SHIPPING ADDRESS</strong></p>
+                <p>You have not set a default shipping address.</p>
+                <button>EDIT ADDRESS</button>
+            </div>
+        </div>
+
+        <!-- Підвал сторінки -->
+        <footer>
+            <p>© 2023 GunForce</p>
+        </footer>
+    </body>
+</html>

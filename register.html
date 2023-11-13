@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>registration-form</title>
+</head>
+    <body>
+        <!-- Верхня частина сторінки -->
+        <header>
+            <div class="top-right">
+                <select>
+                    <option value="uk">Українська</option>
+                    <option value="en">English</option>
+                </select>
+                <a href="login.html">Увійти</a> / <a href="register.html">Зареєструватися</a>
+            </div>
+            
+            <nav>
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="images/logo2.png" alt="Логотип магазину">
+                    </div>
+                    <ul>
+                        <!-- Посилання меню -->
+                        <li><a href="new.html">new</a></li>
+                        <li><a href="mens.html">mens</a></li>
+                        <li><a href="womens.html">womens</a></li>
+                        <li><a href="footwear.html">footwear</a></li>
+                        <li><a href="accessories.html">accessories</a></li>
+                        <li><a href="professional.html">professional</a></li>
+                        <li><a href="patches.html">patches</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="Пошук...">
+                        <!-- Кнопка пошуку -->
+                    </div>
+                    <button onclick="location.href='cart.html'">
+                        <img src="shopping-cart.svg" alt="Кошик">
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Форма реєстрації -->
+        <h1 class="centered-title">CREATE NEW CUSTOMER ACCOUNT</h1>
+
+        <div class="registration-form">
+            <h2>Особиста інформація</h2>
+            <form action="process_registration.php" method="post">
+                <div class="input-field">
+                    <label for="first-name">Ім'я</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-field">
+                    <label for="last-name">Прізвище</label>
+                    <input type="text" id="last-name" name "last-name" required>
+                </div>
+
+                <h2>Інформація для входу</h2>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-field">
+                    <label for="confirm-password">Підтвердити пароль</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="checkbox" id="show-password"> Показати пароль
+                </div>
+                
+                <button type="submit">Створити обліковий запис</button>
+            </form>
+        </div>
+
+        <!-- Підвал сторінки -->
+        <footer>
+            <p>© 2023 GunForce</p>
+        </footer>
+    </body>
+</html>

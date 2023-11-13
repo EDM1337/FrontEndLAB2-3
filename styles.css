@@ -1,0 +1,129 @@
+h2 {
+    font-size: 2em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-weight: bold; 
+    text-align: center; /* Вирівнює текст по центру */
+}
+
+body {
+    font-family: 'Calluna', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul.external-resources {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* Видаляє маркери списку */
+    padding: 0; /* Видаляє відступи списку */
+}
+
+ul.external-resources li {
+    margin: 0 10px; /* Додає відступи між елементами списку */
+}
+
+ul.external-resources li:first-child {
+    margin-left: 0; /* Видаляє відступ зліва для першого елемента списку */
+}
+
+ul.external-resources li a img {
+    width: 100px; /* Задає ширину зображення */
+    transition: border 0.3s ease; /* Додає анімацію до рамки */
+}
+
+ul.external-resources li a:hover img {
+    border: 3px solid #000; /* Додає рамку при наведенні */
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+  /* Стилі для логотипу */
+  .logo {
+    height: 100px;
+    margin-right: 40px;
+}
+.shop-info h1 {
+    font-size: 3em; /* Збільшує розмір шрифту */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-weight: bold; 
+}
+.shop-info {
+    text-align: center;
+}
+/* Стилі для посилань */
+a:link {
+    color: blue;
+}
+a:active {
+    color: red;
+}
+
+
+p::first-line {
+    font-weight: bold;
+}
+
+/* Стилі для основного контенту */
+main {
+    position: relative;
+    left: 50px;
+    z-index: 1;
+    border: none; 
+}
+
+
+section {
+    background: linear-gradient(to right, white, gray);  
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    border: 2px solid black; 
+    background: linear-gradient(to bottom, black, white);
+}
+.nav-list-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li {
+    margin: 0 10px;
+    border: none;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none; /* Видаляє підкреслення */
+    font-weight: bold; 
+    border: 2px dashed rgba(0, 0, 0, 0.3);
+}
+img.gunforce {
+    display: block;
+    margin: 0;
+    width: 100%; 
+    height: 600px;
+}
